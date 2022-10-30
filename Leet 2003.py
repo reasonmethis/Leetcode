@@ -3,6 +3,7 @@
 Memory Usage: 64.3 MB, less than 51.40% of Python3 online submissions for Smallest Missing Genetic Value in Each Subtree.'''
 #Slow for some reason. Complexity should be n log n: n log n preprocessing to build the bin lifting
 #table, then we go through each val 1..n and find lca in log n, so should be another factor of n log n
+
 #Oh, looking in the discussion section I see that there's a linear time solution. Before reading the answers:
 #I guess we can actually find where nodes with val = 2, 3,... connect to the main chain (node with val = 1 
 #and its ancestors - the only nodes with non-1 answers) in linear time, we don't need all that binary
